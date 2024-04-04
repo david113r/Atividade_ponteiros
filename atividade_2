@@ -1,0 +1,25 @@
+#include<stdio.h>
+//2. Crie um programa que contenha um array de float contendo 10 elementos. Imprima o endereço de cada posição do array.
+
+
+
+int main(){
+
+float vetor[]={1, 9.2, 24, 2, 8.1, 46, 0.12, 3, 32, -10};
+float *pos;
+
+
+
+for(int i=0;i<10;i++){
+
+   pos=&vetor[i];
+   printf("\nendereco do vetor na posicao [%d]:%x",i , pos);
+
+
+}
+
+
+
+
+return 0;
+}
